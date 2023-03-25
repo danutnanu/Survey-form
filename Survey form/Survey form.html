@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Required information
+    </p>
+    <form id="survey-form" >
+
+       <fieldset>
+         <label id="name-label">Enter you name:<input type="text" id="name" required  placeholder="name"/></label>
+
+         <label id="email-label">Enter you email:  <input id="email" type="email" required="danutnanu@icloud.com" placeholder="email"/></label>
+
+         <label id="number-label">number please:       <input id="number"type="number" min="1" max="99" placeholder="number"/></label>
+       </fieldset>
+
+       <filedset>
+          <label for="first"><input id="first" type="radio" name="which one" value="1"  class="inline">First</label>
+
+          <label for="second"><input id="second" type="radio" name="which one" value="2" class="inline">Second</label>
+
+          <label for="check"><input id="term and con" type="checkbox" required name="term and con" value="1" class="inline"/>check 1</label>
+          <label for="check"><input id="term and con" type="checkbox" required name="term and con" value="2" class="inline"/>check 2</label>
+        </fieldset>
+
+        <fieldset>
+          <label for="dropdown">choose 
+          <select id="dropdown" name="dropdown">
+          <option value="1">select one </option>
+          <option value="2">select two</option>
+          </select>
+          </label>
+
+          <label for="tex">Provide a text;
+          <textarea id="tex" name="tex" rows="3" cols="30" >
+          </textarea>
+          </label>
+       </fieldset>
+      <input id="submit" type="submit"  >
+     </form>
+    </body>
+  </html>
